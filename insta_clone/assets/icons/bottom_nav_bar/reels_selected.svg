@@ -1,15 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="49" height="46" viewBox="0 0 49 46">
-  <g id="Group_39" data-name="Group 39" transform="translate(-275 -164)">
-    <g id="Polygon_1" data-name="Polygon 1" transform="translate(292.797 180)">
-      <path d="M16.128,9.516,0,19.048.044,0Z" stroke="none"/>
-      <path d="M 1.002907156944275 17.29664611816406 L 14.16968154907227 9.515873908996582 L 1.037485361099243 1.745671629905701 L 1.002907156944275 17.29664611816406 M 5.71637247048784e-06 19.04759788513184 L 0.04401898011565208 5.166572918824386e-06 L 16.12814140319824 9.515873908996582 L 5.71637247048784e-06 19.04759788513184 Z" stroke="none" fill="#000"/>
-    </g>
-    <line id="Line_5" data-name="Line 5" x1="45" transform="translate(277 172.5)" fill="none" stroke="#000" stroke-width="3"/>
-    <path id="Path_69" data-name="Path 69" d="M3.934,7.58,0,0" transform="translate(305 164.92)" fill="none" stroke="#000" stroke-width="3"/>
-    <path id="Path_70" data-name="Path 70" d="M3.934,7.58,0,0" transform="translate(288 164.92)" fill="none" stroke="#000" stroke-width="3"/>
-    <g id="Rectangle_48" data-name="Rectangle 48" transform="translate(275 164)" fill="none" stroke="#000" stroke-width="3">
-      <rect width="49" height="46" rx="10" stroke="none"/>
-      <rect x="1.5" y="1.5" width="46" height="43" rx="8.5" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="45" height="42" viewBox="0 0 45 42">
+  <g id="Group_45" data-name="Group 45" transform="translate(-199 -14)">
+    <g id="Group_39" data-name="Group 39" transform="translate(-76 -150)">
+      <g id="Polygon_1" data-name="Polygon 1" transform="translate(291.348 178.694)">
+        <path d="M14.81,8.738,0,17.49.038,0Z" stroke="none"/>
+        <path d="M 1.002605080604553 15.73982620239258 L 12.85123729705811 8.738467216491699 L 1.032113432884216 1.74566376209259 L 1.002605080604553 15.73982620239258 M 4.096176780876704e-05 17.49030113220215 L 0.03844717517495155 -3.971461410401389e-06 L 14.80956554412842 8.738467216491699 L 4.096176780876704e-05 17.49030113220215 Z" stroke="none" fill="#000"/>
+      </g>
+      <line id="Line_5" data-name="Line 5" x1="41.327" transform="translate(276.837 171.806)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_69" data-name="Path 69" d="M3.613,6.961,0,0" transform="translate(302.551 164.845)" fill="none" stroke="#000" stroke-width="3"/>
+      <path id="Path_70" data-name="Path 70" d="M3.613,6.961,0,0" transform="translate(286.939 164.845)" fill="none" stroke="#000" stroke-width="3"/>
+      <g id="Rectangle_48" data-name="Rectangle 48" transform="translate(275 164)" fill="none" stroke="#000" stroke-width="3">
+        <rect width="45" height="42" rx="10" stroke="none"/>
+        <rect x="1.5" y="1.5" width="42" height="39" rx="8.5" fill="none"/>
+      </g>
     </g>
   </g>
 </svg>
