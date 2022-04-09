@@ -64,6 +64,7 @@ flutter:
   assets:
       - assets/icons/bottom_nav_bar/
       - assets/profile_photos/
+      - assets/icons/component/
      
       
   #- images/a_dot_ham.jpeg
