@@ -1,0 +1,16 @@
+name : user_repository
+description : A repository for users
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.15.0-116.0.dev <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  media_repository:
+    path: ../media_repository
+dev_dependencies:
+  flutter_test:
+    sdk: flutter

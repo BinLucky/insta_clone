@@ -31,6 +31,10 @@ dependencies:
     sdk: flutter
   flutter_svg: ^1.0.3
   avatar_view: ^1.0.1
+  media_repository:
+    path: packages/media_repository
+  user_repository:
+    path: packages/user_repository
   
 
 
@@ -65,6 +69,7 @@ flutter:
       - assets/icons/bottom_nav_bar/
       - assets/profile_photos/
       - assets/icons/component/
+      - assets/icons/appbar/
      
       
   #- images/a_dot_ham.jpeg

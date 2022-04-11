@@ -7,10 +7,10 @@ import 'components/stories.dart';
 class Feed extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       appBar: FeedAppBar(),
-      body: const FeedBody(),
-      bottomNavigationBar: const BottomNavigation(),
+      body: FeedBody(),
+      bottomNavigationBar: BottomNavigation(),
     );
   }
 }

@@ -1,16 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/diagnostics.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'const.dart';
 
 class FeedAppBar extends StatelessWidget implements PreferredSizeWidget {
-  Widget instagramLogo =
-      SvgPicture.asset("assets/icons/component/Instagram_logo.svg");
+  const FeedAppBar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return AppBar(
-      title: Row(children: [instagramLogo]),
-      backgroundColor: Colors.white70,
+      title: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+        Row(
+          children: [
+            instagramLogo,
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [addActivity, activity, dm],
+        ),
+      ]),
+      backgroundColor: Colors.white,
     );
   }
 

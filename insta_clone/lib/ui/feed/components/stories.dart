@@ -5,7 +5,8 @@ class Stories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 88,
+      //width: 70,
+      height: 70,
       child: ListView.separated(
           padding: const EdgeInsets.fromLTRB(8, 8, 0, 0),
           shrinkWrap: true,
@@ -14,7 +15,7 @@ class Stories extends StatelessWidget {
             return const AvatarView(
               avatarType: AvatarType.CIRCLE,
               imagePath: "assets/profile_photos/amy_lee.jpeg",
-              radius: 40,
+              radius: 28,
               borderColor: Colors.red,
               borderWidth: 3,
             );
@@ -25,7 +26,7 @@ class Stories extends StatelessWidget {
               width: 23,
             );
           },
-          itemCount: 5),
+          itemCount: 9),
     );
   }
 }
