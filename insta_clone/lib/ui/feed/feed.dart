@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:insta_clone/ui/components/appbar.dart';
 import 'package:insta_clone/ui/components/bottom_navigation.dart';
 
+import 'components/post.dart';
 import 'components/stories.dart';
 
 class Feed extends StatelessWidget {
@@ -21,7 +22,7 @@ class FeedBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
-      children: [Stories()],
+      children: [Stories(), PostView()],
     );
   }
 }

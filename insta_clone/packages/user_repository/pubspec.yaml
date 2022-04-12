@@ -1,7 +1,9 @@
 name : user_repository
 description : A repository for users
 
+
 version: 1.0.0+1
+publish_to: none
 
 environment:
   sdk: ">=2.15.0-116.0.dev <3.0.0"
