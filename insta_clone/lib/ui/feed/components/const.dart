@@ -23,8 +23,13 @@ class PostFollowButton extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: const ElevatedButton(onPressed: null, child: Text("Follow")),
-    );
+        padding: const EdgeInsets.all(8.0),
+        child: ElevatedButton(
+          onPressed: null,
+          child: const Text("Follow"),
+          style: ElevatedButton.styleFrom(
+              fixedSize: const Size(90, 10),
+              textStyle: TextStyle(fontSize: 10)),
+        ));
   }
 }
