@@ -1,9 +1,7 @@
-name : user_repository
-description : A repository for users
-
+name : content_repository
+description : A repository for medias
 
 version: 1.0.0+1
-publish_to: none
 
 environment:
   sdk: ">=2.15.0-116.0.dev <3.0.0"
@@ -11,8 +9,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  content_repository:
-    path: ../content_repository
 dev_dependencies:
   flutter_test:
     sdk: flutter

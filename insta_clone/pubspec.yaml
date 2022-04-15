@@ -31,10 +31,15 @@ dependencies:
     sdk: flutter
   flutter_svg: ^1.0.3
   avatar_view: ^1.0.1
-  media_repository:
-    path: packages/media_repository
+  expandable_text: ^2.3.0
+  content_repository:
+    path: packages/content_repository
   user_repository:
     path: packages/user_repository
+  media_repository:
+    path : packages/media_repository
+  bloc: ^8.0.3
+  camera: ^0.9.4+19
   
 
 
@@ -70,6 +75,7 @@ flutter:
       - assets/profile_photos/
       - assets/icons/component/
       - assets/icons/appbar/
+      - assets/icons/post/
      
       
   #- images/a_dot_ham.jpeg

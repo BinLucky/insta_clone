@@ -1,4 +1,4 @@
-import 'package:media_repository/media_repository.dart';
+import 'package:content_repository/content_repository.dart';
 
 class User {
   final String userid;

@@ -1,7 +1,9 @@
 name : media_repository
-description : A repository for medias
+description : A repository for camera
+
 
 version: 1.0.0+1
+publish_to: none
 
 environment:
   sdk: ">=2.15.0-116.0.dev <3.0.0"
@@ -9,6 +11,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  content_repository:
+    path: ../media_repository
 dev_dependencies:
   flutter_test:
     sdk: flutter

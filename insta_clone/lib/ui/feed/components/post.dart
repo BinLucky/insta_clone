@@ -1,5 +1,5 @@
-import 'package:avatar_view/avatar_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:insta_clone/ui/feed/components/const.dart';
 
 class PostView extends StatelessWidget {
@@ -10,6 +10,8 @@ class PostView extends StatelessWidget {
       children: const [
         TitleContainer(),
         ImageContainer(),
+        ButtonGroupContainer(),
+        MessageGroupContainer()
       ],
     );
   }
@@ -22,14 +24,13 @@ class TitleContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Padding(
-        padding: const EdgeInsets.fromLTRB(6, 6, 6, 3),
-        child:
-            Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-          Row(children: [PostAvatarView(), const Text("Caption")]),
-          Row(
-            children: [PostFollowButton(), const Text("...")],
-          ),
-        ]));
+        padding: const EdgeInsets.fromLTRB(4, 6, 4, 3),
+        child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: const [
+              CaptionGroupView(),
+              FollowGroupView(),
+            ]));
   }
 }
 
@@ -48,13 +49,20 @@ class ImageContainer extends StatelessWidget {
   }
 }
 
-class CaptionGroupContainer extends StatelessWidget {
-  const CaptionGroupContainer({Key? key}) : super(key: key);
+class MessageGroupContainer extends StatelessWidget {
+  const MessageGroupContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [LikeCountView(), MessageView(), CommentsView()],
+      ),
+    );
   }
 }
 
@@ -64,11 +72,12 @@ class ButtonGroupContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(6, 15, 6, 3),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [LikeShareSendButtonsView(), SaveButtonView()],
+      ),
+    );
   }
 }
-/**
- * 
-        ButtonGroupContainer(),
-        CaptionGroupContainer()
- */
