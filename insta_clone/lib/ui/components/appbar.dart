@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/diagnostics.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:insta_clone/blocs/camera_bloc/camera_bloc.dart';
 import 'const.dart';
 
 class FeedAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -15,9 +15,20 @@ class FeedAppBar extends StatelessWidget implements PreferredSizeWidget {
             instagramLogo,
           ],
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [addActivity, activity, dm],
+        BlocBuilder<CameraBloc, CameraState>(
+          builder: (context, state) {
+            return Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                GestureDetector(
+                  child: addActivity,
+                  onTap: () => context.read<CameraBloc>().add(CameraRequest()),
+                ),
+                activity,
+                dm
+              ],
+            );
+          },
         ),
       ]),
       backgroundColor: Colors.white,

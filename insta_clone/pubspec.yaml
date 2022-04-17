@@ -39,6 +39,7 @@ dependencies:
   media_repository:
     path : packages/media_repository
   bloc: ^8.0.3
+  flutter_bloc: ^8.0.1
   camera: ^0.9.4+19
   
 

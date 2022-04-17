@@ -5,7 +5,9 @@ abstract class CameraEvent {}
 
 class CameraRequest extends CameraEvent {}
 
-class CameraStopped extends CameraEvent {}
+class CameraPause extends CameraEvent {}
+
+class CameraFail extends CameraEvent {}
 
 class CameraCapture extends CameraEvent {}
 

@@ -7,6 +7,12 @@ class CameraInitialState extends CameraState {}
 
 class CameraInProgressState extends CameraState {}
 
+class CameraPreviewState extends CameraState {
+  final CameraPreview preview;
+
+  CameraPreviewState(this.preview) {}
+}
+
 class CameraReadyState extends CameraState {}
 
 class CameraFailedState extends CameraState {}

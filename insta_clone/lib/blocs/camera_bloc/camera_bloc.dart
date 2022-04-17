@@ -1,4 +1,7 @@
 import 'package:bloc/bloc.dart';
+import 'package:camera/camera.dart';
+import 'package:insta_clone/main.dart';
+import 'package:media_repository/media_repository.dart';
 import 'package:meta/meta.dart';
 
 part 'camera_event.dart';
@@ -8,8 +11,11 @@ class CameraBloc extends Bloc<CameraEvent, CameraState> {
   CameraBloc() : super(CameraInitialState()) {
     on<CameraRequest>((event, emit) {
       emit(CameraInProgressState());
+      CameraAPI cmr = CameraAPI(cameras);
+
+      emit(CameraPreviewState(cmr.getPreview()));
     });
-    on<CameraStopped>((event, emit) {
+    on<CameraFail>((event, emit) {
       emit(CameraFailedState());
     });
   }
