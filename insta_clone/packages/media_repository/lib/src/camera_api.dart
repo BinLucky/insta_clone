@@ -8,6 +8,7 @@ class CameraAPI {
   CameraPreview getPreview() {
     CameraController controller =
         CameraController(cameras.first, ResolutionPreset.max);
+    controller.initialize();
     return CameraPreview(controller);
   }
 }

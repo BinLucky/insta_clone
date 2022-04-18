@@ -12,7 +12,7 @@ class CameraBloc extends Bloc<CameraEvent, CameraState> {
     on<CameraRequest>((event, emit) {
       emit(CameraInProgressState());
       CameraAPI cmr = CameraAPI(cameras);
-
+      print("camera is ready");
       emit(CameraPreviewState(cmr.getPreview()));
     });
     on<CameraFail>((event, emit) {

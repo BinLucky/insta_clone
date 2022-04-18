@@ -22,19 +22,21 @@ class FeedBody extends StatelessWidget {
   const FeedBody({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<CameraBloc, CameraState>(
-      builder: (context, state) {
-        if (state is CameraInProgressState) {
-          return CircularProgressIndicator();
-        } else if (state is CameraPreviewState) {
-          return state.preview;
-        } else {
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [Stories(), PostView()],
-          );
-        }
-      },
+    return SingleChildScrollView(
+      child: BlocBuilder<CameraBloc, CameraState>(
+        builder: (context, state) {
+          if (state is CameraInProgressState) {
+            return CircularProgressIndicator();
+          } else if (state is CameraPreviewState) {
+            return state.preview;
+          } else {
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [Stories(), PostView()],
+            );
+          }
+        },
+      ),
     );
   }
 }
