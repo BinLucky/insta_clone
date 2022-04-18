@@ -8,9 +8,9 @@ class CameraInitialState extends CameraState {}
 class CameraInProgressState extends CameraState {}
 
 class CameraPreviewState extends CameraState {
-  final CameraPreview preview;
+  final CameraController controller;
 
-  CameraPreviewState(this.preview) {}
+  CameraPreviewState(this.controller) {}
 }
 
 class CameraReadyState extends CameraState {}

@@ -5,10 +5,11 @@ class CameraAPI {
 
   final List<CameraDescription> cameras;
 
-  CameraPreview getPreview() {
+  Future<CameraController> getPreview() async {
     CameraController controller =
         CameraController(cameras.first, ResolutionPreset.max);
-    controller.initialize();
-    return CameraPreview(controller);
+    await controller.initialize();
+
+    return controller;
   }
 }

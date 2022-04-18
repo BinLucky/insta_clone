@@ -9,11 +9,11 @@ part 'camera_state.dart';
 
 class CameraBloc extends Bloc<CameraEvent, CameraState> {
   CameraBloc() : super(CameraInitialState()) {
-    on<CameraRequest>((event, emit) {
+    on<CameraRequest>((event, emit) async {
       emit(CameraInProgressState());
       CameraAPI cmr = CameraAPI(cameras);
       print("camera is ready");
-      emit(CameraPreviewState(cmr.getPreview()));
+      emit(CameraPreviewState(await cmr.getPreview()));
     });
     on<CameraFail>((event, emit) {
       emit(CameraFailedState());
