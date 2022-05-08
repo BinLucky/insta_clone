@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:insta_clone/blocs/camera_bloc/camera_bloc.dart';
 import 'package:insta_clone/ui/components/appbar.dart';
 import 'package:insta_clone/ui/components/bottom_navigation.dart';
+import 'package:insta_clone/ui/components/camera.dart';
 
 import 'components/post.dart';
 import 'components/stories.dart';
@@ -29,7 +30,7 @@ class FeedBody extends StatelessWidget {
         if (state is CameraInProgressState) {
           return CircularProgressIndicator();
         } else if (state is CameraPreviewState) {
-          return  CameraPreview(state.controller);
+          return CameraView(state.controller);
         } else {
           return SingleChildScrollView(
             child: Column(
